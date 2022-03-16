@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crea tu Usuario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Crea tu cuenta</h2>
+    <div class="container" id="container">
+      <div class="form-container">
+        <form action="" method="" id="formulario">
+          <div id="grupo__usuario">
+            <input
+              type="text"
+              name="usuario"
+              id="usuario"
+              placeholder="Nombre"
+            />
+            <p class="form__input-error">
+              El nombre de usuario no es válido, solo puede contener números,
+              letras o guion bajo.
+            </p>
+          </div>
+          <div id="grupo__correo">
+            <input type="email" name="correo" id="correo" placeholder="Email" />
+            <p class="form__input-error">El correo no es válido</p>
+          </div>
+
+          <div id="grupo__contrasenia">
+            <input
+              type="password"
+              name="contrasenia"
+              id="contrasenia"
+              placeholder="Contraseña"
+            />
+            <p class="form__input-error">
+              La contraseña debe tener entre 4 a 16 dígitos y solo puede
+              contener números, letras y guion bajo.
+            </p>
+          </div>
+
+          <input type="date" name="fecha" id="fecha" max="" />
+
+          <div id="form__mensaje" class="formulario__mensaje">
+            <p>
+              <span>Error</span>: Por favor rellena el formulario correctamente.
+            </p>
+          </div>
+          <button type="submit">Registrarse</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-right">
+            <h1>Hola</h1>
+            <p>Ingresa tus datos personales y registrate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
